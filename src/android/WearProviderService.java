@@ -26,7 +26,7 @@ public class WearProviderService extends Service implements
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener {
 
-    public static final String MESSAGE_RECEIVED_PATH = "net.trentgardner.cordova.androidwear.NewMessage";
+    public static final String MESSAGE_PATH = "de.senseable.spark.wear2quit";
 
     private final List<WearMessageListener> listeners = new ArrayList<WearMessageListener>();
     private final List<String> nodes = new ArrayList<String>();
@@ -201,7 +201,7 @@ public class WearProviderService extends Service implements
             public void run() {
                 MessageApi.SendMessageResult result =
                         Wearable.MessageApi.sendMessage(mGoogleApiClient, nodeId,
-                                MESSAGE_RECEIVED_PATH, message).await();
+                                MESSAGE_PATH, message).await();
 
                 if (result.getStatus().isSuccess()) {
                     Log.v(TAG, "Message sent to : " + nodeId);
