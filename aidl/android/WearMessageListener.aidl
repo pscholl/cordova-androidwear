@@ -1,4 +1,4 @@
-package net.trentgardner.cordova.androidwear;
+package de.senseable.spark;
 
 interface WearMessageListener {
 	void onConnect(String connectionId);

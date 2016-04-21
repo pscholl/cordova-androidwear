@@ -1,6 +1,6 @@
-package net.trentgardner.cordova.androidwear;
+package de.senseable.spark;
 
-import net.trentgardner.cordova.androidwear.WearMessageListener;
+import de.senseable.spark.WearMessageListener;
 
 interface WearMessageApi {
 	void sendData(String connectionId, String data);

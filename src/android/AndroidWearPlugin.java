@@ -1,4 +1,4 @@
-package net.trentgardner.cordova.androidwear;
+package de.senseable.spark;
 
 import java.util.ArrayList;
 import java.util.Enumeration;
@@ -23,9 +23,9 @@ import android.os.IBinder;
 import android.os.RemoteException;
 import android.util.Log;
 
-import net.trentgardner.cordova.androidwear.WearMessageApi;
-import net.trentgardner.cordova.androidwear.WearMessageListener;
-import net.trentgardner.cordova.androidwear.WearProviderService;
+import de.senseable.spark.WearMessageApi;
+import de.senseable.spark.WearMessageListener;
+import de.senseable.spark.WearProviderService;
 
 public class AndroidWearPlugin extends CordovaPlugin {
 	private final String TAG = AndroidWearPlugin.class.getSimpleName();

@@ -1,4 +1,4 @@
-package net.trentgardner.cordova.androidwear;
+package de.senseable.spark;
 
 import android.app.Service;
 import android.content.Intent;
@@ -241,10 +241,8 @@ public class WearProviderService extends Service implements
 
     @Override
     public void onMessageReceived(MessageEvent messageEvent) {
-        if(messageEvent.getPath().equals(MESSAGE_RECEIVED_PATH)) {
-            final String message = new String(messageEvent.getData());
-            dataReceived(messageEvent.getSourceNodeId(), message);
-        }
+        final String message = new String(messageEvent.getData());
+        dataReceived(messageEvent.getSourceNodeId(), message);
     }
 
     @Override
