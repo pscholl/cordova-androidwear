@@ -26,7 +26,7 @@ public class WearProviderService extends Service implements
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener {
 
-    public static final String MESSAGE_PATH = "de.senseable.spark.wear2quit";
+    public static final String MESSAGE_PATH = "/de/senseable";
 
     private final List<WearMessageListener> listeners = new ArrayList<WearMessageListener>();
     private final List<String> nodes = new ArrayList<String>();
